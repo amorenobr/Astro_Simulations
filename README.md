@@ -1,4 +1,4 @@
-# Physics Lab Simulations
+# Astronomy Simulations
 
 Interactive simulations built with Python and Streamlit for exploring
 core concepts in astronomy. Adjust physical parameters with sliders and 
@@ -61,7 +61,7 @@ pixi run pre-commit install
 Astro_Simulations/
 ├── Simulations.py                  # Streamlit landing page
 ├── pages/                          # One file per simulation
-├── src/astro_simulations/          # Physics engines + i18n (importable package)
+├── src/astro_simulations/          # Astronomy modules + i18n
 ├── tests/                          # Pytest suite
 ├── docs/                           # Sphinx documentation
 └── index.html                      # stlite (WebAssembly) build for GitHub Pages

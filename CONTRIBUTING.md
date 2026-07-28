@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in contributing to **Physics Lab Simulations**! Contributions of all kinds are 
+Thanks for your interest in contributing to **Astronomy Simulations**! Contributions of all kinds are 
 welcome - bug reports, new simulations, translation fixes, documentation, and tooling improvements.
 
 ## Ways to contribute
@@ -15,8 +15,8 @@ welcome - bug reports, new simulations, translation fixes, documentation, and to
 The project uses [Pixi](https://pixi.sh) to manage its environment.
 
 ```bash
-git clone https://github.com/amorenobr/Lab_Simulations_Python.git
-cd Lab_Simulations_Python
+git clone https://github.com/amorenobr/Astro_Simulations.git
+cd Astro_Simulations
 pixi install
 pixi run pre-commit install	# enable local lint/format on commit
 ```
@@ -48,12 +48,12 @@ pull request. Pre-commit runs Ruff on each commit automatically.
 
 Each simulation follows the same structure. To add one called `X`:
 
-1. **Physics** - add `src/lab_simulations_python/X.py` with the calculation function(s), and a test in
+1. **Physics** - add `src/astro_simulations/X.py` with the calculation function(s), and a test in
 `tests/test_X.py`.
 2. **Page** - add `pages/N_X.py` (a **Streamlit** page). Call `language_selector()` and wrap every user facing
 string in `t(...)`.
 3. **Translations** - add the `X_*` keys to both the `en` and `es` dictionaries in
-`src/lab_simulations_python/i18n.py`, plus a `nav_X` key and a `page_link` entry in `language_selector`. Both
+`src/astro_simulations/i18n.py`, plus a `nav_X` key and a `page_link` entry in `language_selector`. Both
 languages must stay in sync, this is enforced by `tests/test_i18n.py`.
 4. **Docs and listings** - document the module in `docs/source/api.rst`, add a section to `docs/source/index.rst`, and
 add a bullet to the landing page and the README.
@@ -61,7 +61,7 @@ add a bullet to the landing page and the README.
 
 ## Translations
 
-All user facing text lives in the `TRANSLATIONS` dictionary in `src/lab_simulations_python/i18n.py`, keyed by
+All user facing text lives in the `TRANSLATIONS` dictionary in `src/astro_simulations/i18n.py`, keyed by
 language. Every key must exist in both English and Spanish, checked automatically by `tests/test_i18n.py`.
 
 ## Pull requests
