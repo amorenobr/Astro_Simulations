@@ -1,0 +1,7 @@
+[theme]
+base = "dark"
+primaryColor = "#4C8BF5"               # accent - sliders, buttons, links, active nav
+backgroundColor = "#0A192F"            # deep navy main background
+secondaryBackgroundColor = "#112A46"   # sidebar and input panels (lighter navy)
+textColor = "#E6F1FF"                  # near white text
+font = "sans serif"
