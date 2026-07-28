@@ -14,6 +14,9 @@ TRANSLATIONS = {
             and see the results update in real time.
 
             ### Available Simulations
+            - **Kepler's Laws** - Explore an elliptical orbit set by its semi-major axis and eccentricity,
+            and see the Kepler's three laws: the ellipse shape, the perihelion-to-aphelion speed ratio,
+            and the period-size relation $T^2 = a^3$.
 
             ### How to Use
             1. Select a simulation from the **Sidebar** on the left
@@ -71,6 +74,9 @@ TRANSLATIONS = {
             físicos y ver los resultados actualizarse en tiempo real.
 
             ### Simulaciones disponibles
+            - **Leyes de Kepler** - Explora una órbita elíptica definida por su semieje mayor y su excentricidad,
+            y observa las tres leyes de Kepler: la forma de la elipse, la razón de rapidez perihelio-afelio y la
+            relación periodo-tamaño $T^2 = a^3$.
 
             ### Cómo usar la app
             1. Selecciona una simulación en la **barra lateral** de la izquierda

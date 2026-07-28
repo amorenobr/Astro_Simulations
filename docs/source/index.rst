@@ -12,6 +12,13 @@ modify physical parameters and see the results update in real time.
 Simulations
 -----------
 
+Kepler's Laws
+~~~~~~~~~~~~~
+
+Models a body orbiting the Sun in solar units. Given the semi-major axis :math:`a` (in AU) and eccentricity :math:`e`,
+the app draws the elliptical orbit with the Sun at one focus and reports the perihelion and aphelion distancess, the
+orbital period from Kepler's third law :math:`T^2 = a^3`, and the perihelion-to-aphelion speed ratio
+:math:`(1+e)/(1-e)`. The underlying calculations are implemented in the :mod:`kepler` module.
 
 
 API Reference
