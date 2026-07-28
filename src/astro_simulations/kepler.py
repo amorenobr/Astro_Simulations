@@ -23,16 +23,17 @@ def calculate_kepler(semi_major_axis: float, eccentricity: float) -> Dict[str, f
     semi_minor_axis = semi_major_axis * np.sqrt(1 - eccentricity**2)
     perihelion = semi_major_axis * (1 - eccentricity)
     aphelion = semi_major_axis * (1 + eccentricity)
-    period = semi_major_axis**1.5                           # in years (Kepler's third law)
-    speed_ratio = (1 + eccentricity) / (1 - eccentricity)   # v_peri / v_aph (Kepler's second law)
+    period = semi_major_axis**1.5  # in years (Kepler's third law)
+    speed_ratio = (1 + eccentricity) / (1 - eccentricity)  # v_peri / v_aph (Kepler's second law)
 
     return {
-            "semi_minor_axis": semi_minor_axis,
-            "perihelion": perihelion,
-            "aphelion": aphelion,
-            "period": period,
-            "speed_ratio": speed_ratio
-            }
+        "semi_minor_axis": semi_minor_axis,
+        "perihelion": perihelion,
+        "aphelion": aphelion,
+        "period": period,
+        "speed_ratio": speed_ratio,
+    }
+
 
 def orbit_shape(semi_major_axis: float, eccentricity: float, n: int = 500):
     """

@@ -10,8 +10,8 @@ def test_circular_orbit():
     assert r["semi_minor_axis"] == pytest.approx(1.0)
     assert r["perihelion"] == pytest.approx(1.0)
     assert r["aphelion"] == pytest.approx(1.0)
-    assert r["period"] == pytest.approx(1.0)        # Earth: a = 1 AU, T = 1 year
-    assert r["speed_ratio"] == pytest.approx(1.0)   # uniform speed on a circle
+    assert r["period"] == pytest.approx(1.0)  # Earth: a = 1 AU, T = 1 year
+    assert r["speed_ratio"] == pytest.approx(1.0)  # uniform speed on a circle
 
 
 def test_kepler_third_law():
@@ -25,10 +25,10 @@ def test_eccentric_orbit():
     """Nonzero eccentricity: peri < a < aph, and faster at perihelion."""
     a, e = 2.0, 0.5
     r = calculate_kepler(a, e)
-    assert r["perihelion"] == pytest.approx(1.0)    # a(1 - e)
-    assert r["aphelion"] == pytest.approx(3.0)      # a(1 + e)
+    assert r["perihelion"] == pytest.approx(1.0)  # a(1 - e)
+    assert r["aphelion"] == pytest.approx(3.0)  # a(1 + e)
     assert r["perihelion"] < a < r["aphelion"]
-    assert r["speed_ratio"] == pytest.approx(3.0)   # (1 + e)/(1 - e)
+    assert r["speed_ratio"] == pytest.approx(3.0)  # (1 + e)/(1 - e)
 
 
 def test_orbit_shape_on_ellipse():
