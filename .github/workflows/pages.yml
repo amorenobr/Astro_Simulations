@@ -1,0 +1,52 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install docs dependencies
+        run: pip install sphinx sphinx-book-theme numpy
+
+      - name: Build documentation
+        run: sphinx-build -b html docs/source docs/build/html
+
+      - name: Assemble site
+        run: |
+          mkdir -p public/docs
+          cp index.html Simulations.py public/
+          cp -r pages src .streamlit public/
+          cp -r docs/build/html/* public/docs/
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

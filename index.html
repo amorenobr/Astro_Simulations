@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Astronomy Simulations</title>
+		<link
+				rel="stylesheet"
+				href="https://cdn.jsdelivr.net/npm/@stlite/browser@1.8.1/build/stlite.css"
+				/>
+
+	</head>
+		<body>
+			<div id="root"></div>
+			<script type="module">
+				import {mount} from "https://cdn.jsdelivr.net/npm/@stlite/browser@1.8.1/build/stlite.js";
+
+				mount(
+				{
+				requirements: ["numpy", "plotly"],
+				entrypoint: "Simulations.py",
+				streamlitConfig: {
+					"theme.base": "dark",
+					"theme.primaryColor": "#4C8BF5",
+					"theme.backgroundColor": "#0A192F",
+					"theme.secondaryBackgroundColor": "#112A46",
+					"theme.textColor": "#E6F1FF",
+					"theme.font": "sans serif",
+				},
+				files: {
+				"Simulations.py": {url: "./Simulations.py"},
+				"src/astro_simulations/__init__.py": {url: "./src/astro_simulations/__init__.py"},
+				"src/astro_simulations/i18n.py": {url: "./src/astro_simulations/i18n.py"},
+				},	
+				},
+				document.getElementById("root")
+				);
+			</script>
+		</body>
+</html>
