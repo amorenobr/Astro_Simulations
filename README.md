@@ -13,6 +13,10 @@ one-click language toggle.
 
 ## Simulations
 
+- **Kepler's Laws** - Explore an elliptical orbit set by its semi-major axis and eccentricity, and see Kepler's
+three laws: the ellipse shape, the perihelion-to-aphelion speed ratio, and the period-size relation T² = a³.
+- **Planck Spectrum** - See how a blackbody's radiation depends on temperature: the spectrum's peak shifts toward
+the blue as it heats up (Wien's law) and the total power grows as T⁴ (Stefan-Boltzmann law).
 
 ## Getting Started
 
