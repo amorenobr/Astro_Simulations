@@ -86,6 +86,10 @@ Astro_Simulations/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Acknowledgments
+
+Developed with the assistance of Claude (Anthropic) for code review, debugging, and coding support.
+
 ## Author
 
 Alexander Moreno Briceño - Universidad Antonio Nariño
