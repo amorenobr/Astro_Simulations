@@ -9,7 +9,9 @@ def test_wien_displacement_law():
     hot = calculate_planck(10000.0)
     cold = calculate_planck(5000.0)
     assert hot["peak_wavelength"] == pytest.approx(2.897771955e-3 / 10000.0 * 1e9, rel=1e-6)
-    assert cold["peak_wavelength"] == pytest.approx(2 * hot["peak_wavelength"], rel=1e-6)   # half T -> 2x peak
+    assert cold["peak_wavelength"] == pytest.approx(
+        2 * hot["peak_wavelength"], rel=1e-6
+    )  # half T -> 2x peak
 
 
 def test_stefan_boltzmann_law():

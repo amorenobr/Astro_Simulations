@@ -8,6 +8,7 @@ TRANSLATIONS = {
         "sidebar_select": "Select a simulation above",
         "nav_home": "Home",
         "nav_kepler": "Kepler's Laws",
+        "nav_planck": "Planck Spectrum",
         "landing_body": """
             This is an interactive collection of simulations designed to explore key concepts
             in astronomy. Each simulation allows you to adjust different physical parameters
@@ -61,6 +62,30 @@ TRANSLATIONS = {
         "kep_perihelion": "Perihelion",
         "kep_aphelion": "Aphelion",
         "kep_speed_ratio": "Speed Ratio (peri/aph)",
+        # --- Planck ---
+        "pl_title": "Planck Blackbody Spectrum Simulation",
+        "pl_intro": """
+        A **blackbody** absorbs all radiation and re-emits it with a spectrum that depends only on its temperature $T$.
+        **Planck's law** gives the spectral radiance:
+
+        $$B(\\lambda, T) = \\frac{2 h c^2}{\\lambda^5}\\,\\frac{1}{e^{hc/\\lambda k_B T} - 1}$$
+
+        - **Wien's law:** the peak wavelength shifts inversely with temperature, $\\lambda_\\mathrm{peak} = b/T$.
+        Hotter objects glow bluer.
+        - **Stefan-Boltzmann law:** the total radiated power grows as $T^4$. Hotter objects are far brigther.
+
+        Use the sidebar to set the temperature, then click **Run Simulation** to see the spectrum, its peak, and the
+        total radiated power.
+        """,
+        "pl_temperature": "Temperature (K)",
+        "pl_current_params": "Current parameters: T **{temp} K**",
+        "pl_spectrum_title": "Blackbody Spectrum",
+        "pl_wavelength_axis": "Wavelength (nm)",
+        "pl_radiance_axis": "Spectral Radiance",
+        "pl_hover": "Wavelength: %{x:.0f} nm<br>Radiance: %{y:.2e}<extra></extra>",
+        "pl_visible": "Visible",
+        "pl_peak_wavelength": "Peak Wavelength",
+        "pl_radiated_power": "Radiated Power",
         "developed_by": "Developed by **Alexander Moreno Briceño** - Universidad Antonio Nariño",
     },
     "es": {
@@ -68,6 +93,7 @@ TRANSLATIONS = {
         "sidebar_select": "Selecciona una simulación arriba",
         "nav_home": "Inicio",
         "nav_kepler": "Leyes de Kepler",
+        "nav_planck": "Espectro de Planck",
         "landing_body": """
             Esta es una colección interactiva de simulaciones diseñada para explorar
             conceptos clave de astronomía. Cada simulación te permite ajustar diferentes parámetros
@@ -121,6 +147,30 @@ TRANSLATIONS = {
         "kep_perihelion": "Perihelio",
         "kep_aphelion": "Afelio",
         "kep_speed_ratio": "Razón de Rapidez (peri/afe)",
+        # --- Planck ---
+        "pl_title": "Simulación de la Radiación del Cuerpo Negro de Planck",
+        "pl_intro": """
+        Un **cuerpo negro** absorbe toda la radiación y la reemite con un espectro que depende únicamente de su
+        temperatura $T$. La **ley de Planck** da la radiación espectral:
+
+        $$B(\\lambda, T) = \\frac{2 h c^2}{\\lambda^5}\\,\\frac{1}{e^{hc/\\lambda k_B T} - 1}$$
+
+        - **Ley de Wien:** la longitud de onda del máximo se desplaza de forma inversa a la temperatura, $\\lambda_\\mathrm{peak} = b/T$.
+        Los objetos más calientes brillan en un tono azul.
+        - **Ley de Stefan-Boltzmann:** la potencial total radiada crece como $T^4$. Los objetos más calientes son mucho más brillantes.
+
+        Usa la barra lateral para definir la temperatura, luego haz click en **Ejecutar Simulación** para ver el
+        espectro, su máximoo, y la potencia total radiada.
+        """,
+        "pl_temperature": "Temperatura (K)",
+        "pl_current_params": "Parámetros actuales: T **{temp} K**",
+        "pl_spectrum_title": "Radiación de Cuerpo Negro",
+        "pl_wavelength_axis": "Longitud de Onda (nm)",
+        "pl_radiance_axis": "Radiancia Espectral",
+        "pl_hover": "Longitud de Onda: %{x:.0f} nm<br>Radiancia: %{y:.2e}<extra></extra>",
+        "pl_visible": "Visible",
+        "pl_peak_wavelength": "Longitud de Onda del Máximo",
+        "pl_radiated_power": "Potencia Radiada",
         "developed_by": "Desarrollado por **Alexander Moreno Briceño** - Universidad Antonio Nariño",
     },
 }
@@ -158,3 +208,4 @@ def language_selector() -> None:
     # Translated page navigation (replaces the hidden, English-only default nav)
     st.sidebar.page_link("Simulations.py", label=t("nav_home"), icon="🏠")
     st.sidebar.page_link("pages/1_Kepler.py", label=t("nav_kepler"), icon="🪐")
+    st.sidebar.page_link("pages/2_Planck_Spectrum.py", label=t("nav_planck"), icon="🌈")
