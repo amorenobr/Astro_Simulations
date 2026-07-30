@@ -21,6 +21,14 @@ orbital period from Kepler's third law :math:`T^2 = a^3`, and the perihelion-to-
 :math:`(1+e)/(1-e)`. The underlying calculations are implemented in the :mod:`kepler` module.
 
 
+Planck Spectrum
+~~~~~~~~~~~~~~~
+
+Models the radiation of a blackbody at temperature :math:`T`. The app plots the Planck spectral radiance versus
+wavelength and reports the peak wavelength from Wien's law (:math:`\lambda_\mathrm{peak} = b/T`) and the total radiated
+power per unit area from the Stefan-Boltzmann law (:math:`\sigma T^4`). The underlying calculations are implemented in
+the :mod:`planck` module.
+
 API Reference
 ~~~~~~~~~~~~~
 

@@ -18,6 +18,9 @@ TRANSLATIONS = {
             - **Kepler's Laws** - Explore an elliptical orbit set by its semi-major axis and eccentricity,
             and see the Kepler's three laws: the ellipse shape, the perihelion-to-aphelion speed ratio,
             and the period-size relation $T^2 = a^3$.
+            - **Planck Spectrum** - See how a blackbody's radiation depends on its temperature: the spectrum's peak
+            shifts toward the blue as it heats up (Wien's law) and the total power grows as $T^4$
+            (Stefan-Boltzmann law).
 
             ### How to Use
             1. Select a simulation from the **Sidebar** on the left
@@ -103,6 +106,9 @@ TRANSLATIONS = {
             - **Leyes de Kepler** - Explora una órbita elíptica definida por su semieje mayor y su excentricidad,
             y observa las tres leyes de Kepler: la forma de la elipse, la razón de rapidez perihelio-afelio y la
             relación periodo-tamaño $T^2 = a^3$.
+            - **Espectro de Planck** - Observa cómo la radiación de un cuerpo negro depende de su temperatura: el máximo
+            del espectro se desplaza hacia el azul al calentarse (ley de Wien) y la potencia total crece como
+            $T^4$ (ley de Stefan-Boltzmann).
 
             ### Cómo usar la app
             1. Selecciona una simulación en la **barra lateral** de la izquierda

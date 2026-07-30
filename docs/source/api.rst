@@ -8,3 +8,12 @@ Kepler's Laws
       :members:
       :undoc-members:
       :show-inheritance:
+
+
+Planck Spectrum
+---------------
+
+.. automodule:: planck
+      :members:
+      :undoc-members:
+      :show-inheritance:
