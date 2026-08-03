@@ -22,6 +22,8 @@ TRANSLATIONS = {
             - **Planck Spectrum** - See how a blackbody's radiation depends on its temperature: the spectrum's peak
             shifts toward the blue as it heats up (Wien's law) and the total power grows as $T^4$
             (Stefan-Boltzmann law).
+            - **Hubble's Law** - See the expanding Universe: galaxies recede at a velocity proportional to their
+            distance (v = H₀d), and the Hubble constant sets the age of the Universe.
 
             ### How to Use
             1. Select a simulation from the **Sidebar** on the left
@@ -137,6 +139,8 @@ TRANSLATIONS = {
             - **Espectro de Planck** - Observa cómo la radiación de un cuerpo negro depende de su temperatura: el máximo
             del espectro se desplaza hacia el azul al calentarse (ley de Wien) y la potencia total crece como
             $T^4$ (ley de Stefan-Boltzmann).
+            - **Ley de Hubble** - Observa la expansión del Universo: las galaxias se alejan con una velocidad
+            proporcional a su distancia (v = H₀d), y la constante de Hubble determina la edad del Universo.
 
             ### Cómo usar la app
             1. Selecciona una simulación en la **barra lateral** de la izquierda

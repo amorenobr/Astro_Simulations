@@ -29,6 +29,16 @@ wavelength and reports the peak wavelength from Wien's law (:math:`\lambda_\math
 power per unit area from the Stefan-Boltzmann law (:math:`\sigma T^4`). The underlying calculations are implemented in
 the :mod:`planck` module.
 
+
+Hubble's Law
+~~~~~~~~~~~~
+
+Models the expansion of the Universe. Given the Hubble constant :math:`H_0` and a galaxy's distance :math:`d`,
+the app plots the Hubble diagram (:math:`v = H_0 d`) and reports the recession velocity, the redshift
+(:math:`z \approx v/c`), and the age of the Universe from the Hubble time (:math:`1/H_0`). The underlying
+calculations are implemented in the :mod:`hubble` module.
+
+
 API Reference
 ~~~~~~~~~~~~~
 

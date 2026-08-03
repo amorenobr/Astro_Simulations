@@ -17,3 +17,12 @@ Planck Spectrum
       :members:
       :undoc-members:
       :show-inheritance:
+
+
+Hubble's Law
+------------
+
+.. automodule:: hubble
+      :members:
+      :undoc-members:
+      :show-inheritance:
