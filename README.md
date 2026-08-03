@@ -17,6 +17,8 @@ one-click language toggle.
 three laws: the ellipse shape, the perihelion-to-aphelion speed ratio, and the period-size relation T² = a³.
 - **Planck Spectrum** - See how a blackbody's radiation depends on temperature: the spectrum's peak shifts toward
 the blue as it heats up (Wien's law) and the total power grows as T⁴ (Stefan-Boltzmann law).
+- **Hubble's Law** - See the expanding Universe: galaxies recede at a velocity proportional to their distance
+(v = H₀d), and the Hubble constant sets the age of the Universe.
 
 ## Getting Started
 
