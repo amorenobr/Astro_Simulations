@@ -9,6 +9,7 @@ TRANSLATIONS = {
         "nav_home": "Home",
         "nav_kepler": "Kepler's Laws",
         "nav_planck": "Planck Spectrum",
+        "nav_hubble": "Hubble's Law",
         "landing_body": """
             This is an interactive collection of simulations designed to explore key concepts
             in astronomy. Each simulation allows you to adjust different physical parameters
@@ -89,6 +90,32 @@ TRANSLATIONS = {
         "pl_visible": "Visible",
         "pl_peak_wavelength": "Peak Wavelength",
         "pl_radiated_power": "Radiated Power",
+        # --- Hubble ---
+        "hub_title": "Hubble's Law Simulation",
+        "hub_intro": """
+        **Hubble's Law** states that galaxies recede from us at a velocity proportional to their distance:
+        $v = H_0 d$, where $H_0$ is the **Hubble constant**. It's the key evidence that the Universe is expanding.
+
+        - **Recession velocity:** $v = H_0 d$ (farther galaxies move away faster).
+        - **Redshift:** the recession stretches light, giving a redshift $z \\approx v/c$ (low-redshift approximation).
+        - **Age of the Universe:** running the expansion backward, the **Hubble time** $t = 1/H_0$ estimates
+        the age (a *larger* $H_0$ means a *younger*, faster expanding Universe).
+
+        Use the sidebar to set the Hubble constant and a galaxy's distance, then click **Run Simulation** to see the
+        Hubble diagram and the derived quantities.
+        """,
+        "hub_h0": "Hubble Constant H₀ (km/s/Mpc)",
+        "hub_distance": "Galaxy Distance (Mpc)",
+        "hub_current_params": "Current parameters: H₀ **{h0} km/s/Mpc**, distance **{d} Mpc**",
+        "hub_diagram_title": "Hubble Diagram",
+        "hub_distance_axis": "Distance (Mpc)",
+        "hub_velocity_axis": "Recession Velocity (km/s)",
+        "hub_line": "v = H₀ d",
+        "hub_galaxy": "Selected Galaxy",
+        "hub_hover": "Distance: %{x:.0f} Mpc<br>Velocity: %{y:.0f} km/s<extra></extra>",
+        "hub_velocity": "Recession Velocity",
+        "hub_redshift": "Redshift",
+        "hub_age": "Age of Universe",
         "developed_by": "Developed by **Alexander Moreno Briceño** - Universidad Antonio Nariño",
     },
     "es": {
@@ -97,6 +124,7 @@ TRANSLATIONS = {
         "nav_home": "Inicio",
         "nav_kepler": "Leyes de Kepler",
         "nav_planck": "Espectro de Planck",
+        "nav_hubble": "Ley de Hubble",
         "landing_body": """
             Esta es una colección interactiva de simulaciones diseñada para explorar
             conceptos clave de astronomía. Cada simulación te permite ajustar diferentes parámetros
@@ -177,6 +205,34 @@ TRANSLATIONS = {
         "pl_visible": "Visible",
         "pl_peak_wavelength": "Longitud de Onda del Máximo",
         "pl_radiated_power": "Potencia Radiada",
+        # --- Hubble ---
+        "hub_title": "Simulación de la Ley de Hubble",
+        "hub_intro": """
+        La **Ley de Hubble** establece que las galaxias se alejan de nosotros con una velocidad proporcional a su
+        distancia: $v = H_0 d$, donde $H_0$ es la **constante de Hubble**. Es la evidencia clave de que el
+        Universo se expande.
+
+        - **Velocidad de recesión:** $v = H_0 d$ (las galaxias más lejanas se alejan más rápido).
+        - **Corrimiento al rojo:** la recesión "estira" la luz, dando un corrimiento al rojo $z \\approx v/c$
+        (aproximación).
+        - **Edad del Universo:** al retroceder la expansión, el **tiempo de Hubble** $t = 1/H_0$ estima la edad
+        (un $H_0$ *mayor* implica un Universo *más joven* que se expande más rápido).
+
+        Usa la barra lateral para definir la constante de Hubble constant y la distancia de una galaxia, luego haz
+        click en **Ejecutar Simulación** para ver el diagrama de Hubble y las cantidades derivadas.
+        """,
+        "hub_h0": "Constante de Hubble H₀ (km/s/Mpc)",
+        "hub_distance": "Distancia de la galaxia (Mpc)",
+        "hub_current_params": "Parámetros actuales: H₀ **{h0} km/s/Mpc**, distancia **{d} Mpc**",
+        "hub_diagram_title": "Diagrama de Hubble",
+        "hub_distance_axis": "Distancia (Mpc)",
+        "hub_velocity_axis": "Velocidad de recesión (km/s)",
+        "hub_line": "v = H₀ d",
+        "hub_galaxy": "Galaxia seleccionada",
+        "hub_hover": "Distancia: %{x:.0f} Mpc<br>Velocidad: %{y:.0f} km/s<extra></extra>",
+        "hub_velocity": "Velocidad de recesión",
+        "hub_redshift": "Corrimiento al rojo",
+        "hub_age": "Edad del Universo",
         "developed_by": "Desarrollado por **Alexander Moreno Briceño** - Universidad Antonio Nariño",
     },
 }
@@ -215,3 +271,4 @@ def language_selector() -> None:
     st.sidebar.page_link("Simulations.py", label=t("nav_home"), icon="🏠")
     st.sidebar.page_link("pages/1_Kepler.py", label=t("nav_kepler"), icon="🪐")
     st.sidebar.page_link("pages/2_Planck_Spectrum.py", label=t("nav_planck"), icon="🌈")
+    st.sidebar.page_link("pages/3_Hubble.py", label=t("nav_hubble"), icon="🌌")
