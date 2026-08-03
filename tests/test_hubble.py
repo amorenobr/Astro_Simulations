@@ -6,7 +6,7 @@ from src.astro_simulations.hubble import calculate_hubble, hubble_diagram
 def test_hubble_law_linear():
     """Recession velocity is H0 times distance."""
     r = calculate_hubble(hubble_constant=70.0, distance=100.0)
-    assert r["recession_velocity"] == pytest.approx(7000.0)         # 70 * 100
+    assert r["recession_velocity"] == pytest.approx(7000.0)  # 70 * 100
 
 
 def test_redshift_low_z():
@@ -35,4 +35,4 @@ def test_hubble_diagram():
     assert len(d) == len(v) == 100
     assert d[0] == pytest.approx(0.0)
     assert v[0] == pytest.approx(0.0)
-    assert v[-1] / d[-1] == pytest.approx(70.0)                      # slope = H0
+    assert v[-1] / d[-1] == pytest.approx(70.0)  # slope = H0
