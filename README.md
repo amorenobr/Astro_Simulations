@@ -19,6 +19,8 @@ three laws: the ellipse shape, the perihelion-to-aphelion speed ratio, and the p
 the blue as it heats up (Wien's law) and the total power grows as T⁴ (Stefan-Boltzmann law).
 - **Hubble's Law** - See the expanding Universe: galaxies recede at a velocity proportional to their distance
 (v = H₀d), and the Hubble constant sets the age of the Universe.
+- **Exoplanet Transit** - Watch a planet cross its star and dim it: the depth of the dip gives the planet's size
+relative to the star, $(R_p/R_\\star)^2$, and the duration follows from the orbit.
 
 ## Getting Started
 

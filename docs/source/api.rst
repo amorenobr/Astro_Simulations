@@ -26,3 +26,12 @@ Hubble's Law
       :members:
       :undoc-members:
       :show-inheritance:
+
+
+Exoplanet Transit
+-----------------
+
+.. automodule:: transit
+      :members:
+      :undoc-members:
+      :show-inheritance:

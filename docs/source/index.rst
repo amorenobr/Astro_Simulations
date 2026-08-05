@@ -39,6 +39,16 @@ the app plots the Hubble diagram (:math:`v = H_0 d`) and reports the recession v
 calculations are implemented in the :mod:`hubble` module.
 
 
+Exoplanet Transit
+~~~~~~~~~~~~~~~~~
+
+Models the light curve of a planet transiting its star on a circular, edge-on orbit. Given the stellar and planetary
+radii and the orbital distance, the app plots the trapezoidal light curve and reports the transit depth
+:math:`(R_p/R_\star)^2`, the radius ratio, and the total and full durations :math:`T_{14}` and :math:`T_{23}`. The
+orbital period follows from Kepler's third law. The underlying calculations are implemented in the :mod:`transit`
+module.
+
+
 API Reference
 ~~~~~~~~~~~~~
 

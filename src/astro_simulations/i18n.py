@@ -25,6 +25,8 @@ TRANSLATIONS = {
             (Stefan-Boltzmann law).
             - **Hubble's Law** - See the expanding Universe: galaxies recede at a velocity proportional to their
             distance (v = H₀d), and the Hubble constant sets the age of the Universe.
+            - **Exoplanet Transit** - Watch a planet cross its star and dim it: the depth of the dip gives the
+            planet's size relative to the star, $(R_p/R_\\star)^2$, and the duration follows from the orbit.
 
             ### How to Use
             1. Select a simulation from the **Sidebar** on the left
@@ -172,6 +174,9 @@ TRANSLATIONS = {
             $T^4$ (ley de Stefan-Boltzmann).
             - **Ley de Hubble** - Observa la expansión del Universo: las galaxias se alejan con una velocidad
             proporcional a su distancia (v = H₀d), y la constante de Hubble determina la edad del Universo.
+            - **Tránsito de Exoplaneta** - Observa un planeta cruzar su estrella y atenuarla: la profundidad de la
+            caída da el tamaño del planeta relativo a la estrella, $(R_p/R_\\star)^2$, y la duración se deduce de
+            la órbita.
 
             ### Cómo usar la app
             1. Selecciona una simulación en la **barra lateral** de la izquierda
