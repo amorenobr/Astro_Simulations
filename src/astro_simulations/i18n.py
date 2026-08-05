@@ -10,6 +10,7 @@ TRANSLATIONS = {
         "nav_kepler": "Kepler's Laws",
         "nav_planck": "Planck Spectrum",
         "nav_hubble": "Hubble's Law",
+        "nav_transit": "Exoplanet Transit",
         "landing_body": """
             This is an interactive collection of simulations designed to explore key concepts
             in astronomy. Each simulation allows you to adjust different physical parameters
@@ -118,6 +119,35 @@ TRANSLATIONS = {
         "hub_velocity": "Recession Velocity",
         "hub_redshift": "Redshift",
         "hub_age": "Age of Universe",
+        # --- Transit ---
+        "tr_title": "Exoplanet Transit Simulation",
+        "tr_intro": """
+        **Transit photometry** is how most known exoplanets were discovered: when a planet passes in front of its
+        star, it blocks a small fraction of the light and the star appears slightly dimmer for a few hours.
+
+        - **Transit depth:** the dip is set purely by the area ratio, $\\delta = (R_p/R_\\star)^2$. Earth across the
+        Sun dims it by only 84 parts per million, Jupiter by about 1%.
+        - **Duration:** the total transit $T_{14}$ (first to fourth contact) grows with the orbital period and
+        shrinks with distance. The flat bottom $T_{23}$ is shorter, since ingress and egress take time.
+        - **Orbital period:** here it follows from Kepler's third law for a Sun-like star, $T^2 = a^3$, so every
+        configuration stays physically consistent.
+
+        Use the sidebar to set the star and the planet sizes and the orbital distance, then click **Run Simulation**
+        to see the light curve and the measured quantities.
+        """,
+        "tr_star_radius": "Star Radius (R⊙)",
+        "tr_planet_radius": "Planet Radius (R⊕)",
+        "tr_semi_major": "Orbital Distance (AU)",
+        "tr_current_params": "Current parameters: R★ **{rs} R⊙**, Rp **{rp} R⊕**, a **{a} AU** → period **{p} days**",
+        "tr_curve_title": "Transit Light Curve",
+        "tr_time_axis": "Time from mid-transit (hours)",
+        "tr_flux_axis": "Relative Brightness",
+        "tr_hover": "Time: %{x:.2f} h<br>Brightness: %{y:.5f}<extra></extra>",
+        "tr_transit": "Transit",
+        "tr_depth": "Transit Depth",
+        "tr_radius_ratio": "Radius Ratio (Rp/R★)",
+        "tr_duration_total": "Total Duration (T14)",
+        "tr_duration_full": "Full Duration (T23)",
         "developed_by": "Developed by **Alexander Moreno Briceño** - Universidad Antonio Nariño",
     },
     "es": {
@@ -127,6 +157,7 @@ TRANSLATIONS = {
         "nav_kepler": "Leyes de Kepler",
         "nav_planck": "Espectro de Planck",
         "nav_hubble": "Ley de Hubble",
+        "nav_transit": "Tránsito de Exoplaneta",
         "landing_body": """
             Esta es una colección interactiva de simulaciones diseñada para explorar
             conceptos clave de astronomía. Cada simulación te permite ajustar diferentes parámetros
@@ -237,6 +268,37 @@ TRANSLATIONS = {
         "hub_velocity": "Velocidad de recesión",
         "hub_redshift": "Corrimiento al rojo",
         "hub_age": "Edad del Universo",
+        # --- Transit ---
+        "tr_title": "Simulación de Tránsito de Exoplaneta",
+        "tr_intro": """
+        La **fotometría de tránsitos** es el método con el que se han descubierto la mayoría de los exoplanetas
+        conocidos: cuando un planeta pasa frente a su estrella bloquea una pequeña fracción de la luz y la estrella
+        se ve levemente más tenue durante algunas horas.
+
+        - **Profundidad del tránsito:** la caída depende únicamente de la razón de las áreas, $\\delta = (R_p/R_\\star)^2$.
+        La Tierra frente al Sol lo atenúa solo 84 partes por millón, Júpiter alrededor del 1%.
+        - **Duración:** el tránsito total $T_{14}$ (del primer al cuarto contacto) crece con el periodo orbital
+        y disminuye con la distancia. El fondo plano $T_{23}$ es más corto debido a que la entrada y salida toman
+        más tiempo.
+        - **Periodo orbital:** aquí se obtiene de la tercera ley de movimiento planetario de  Kepler, $T^2 = a^3$, de
+        modo que toda configuración es físicamente consistente.
+
+        Usa la barra lateral para definir los tamaños de la estrella y del planeta, y la distancia orbital, luego haz
+        click en **Ejecutar Simulación** para ver la curva de luz y las cantidades medidas.
+        """,
+        "tr_star_radius": "Radio de la Estrella (R⊙)",
+        "tr_planet_radius": "Radio del Planeta (R⊕)",
+        "tr_semi_major": "Distancia Orbital (AU)",
+        "tr_current_params": "Parámetros actuales: R★ **{rs} R⊙**, Rp **{rp} R⊕**, a **{a} AU** → periodo **{p} días**",
+        "tr_curve_title": "Curva de Luz del Tránsito",
+        "tr_time_axis": "Tiempo desde el centro del tránsito (horas)",
+        "tr_flux_axis": "Brillo Relativo",
+        "tr_hover": "Tiempo: %{x:.2f} h<br>Brillo: %{y:.5f}<extra></extra>",
+        "tr_transit": "Tránsito",
+        "tr_depth": "Profundidad del Tránsito",
+        "tr_radius_ratio": "Razón de Radios (Rp/R★)",
+        "tr_duration_total": "Duración Total (T14)",
+        "tr_duration_full": "Duración Completa (T23)",
         "developed_by": "Desarrollado por **Alexander Moreno Briceño** - Universidad Antonio Nariño",
     },
 }
@@ -276,3 +338,4 @@ def language_selector() -> None:
     st.sidebar.page_link("pages/1_Kepler.py", label=t("nav_kepler"), icon="🪐")
     st.sidebar.page_link("pages/2_Planck_Spectrum.py", label=t("nav_planck"), icon="🌈")
     st.sidebar.page_link("pages/3_Hubble.py", label=t("nav_hubble"), icon="🌌")
+    st.sidebar.page_link("pages/4_Transit.py", label=t("nav_transit"), icon="🌑")
