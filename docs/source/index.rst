@@ -49,6 +49,18 @@ orbital period follows from Kepler's third law. The underlying calculations are 
 module.
 
 
+Radial Velocity
+~~~~~~~~~~~~~~~
+
+Models the reflex motion of a star orbiting the barycenter it shares with a planet. The velocity semi-amplitude is
+:math:`K = \frac{M_p \sin i}{\sqrt{1 - e^2}} \sqrt{\frac{G}{(M_\star + M_p) a}}`, so the measurable quantity is the
+minimum mass :math:`M_p \sin i` rather than the mass itself. An orbit seen face on produces no signal. For an eccentric
+orbit the curve is found by solving Kepler's equation :math:`M = E - \sin E` for the eccentric anomaly by
+Newton-Raphson iteration, converting to the true anomaly, and evaluating :math:`v = K[\cos(\nu + \omega) + e \cos \omega]`.
+The app plots one full orbit and reports the period, the semi-amplitude, the minimum mass and the mass function.
+The underlying calculations are implemented in the :mod:`radial_velocity` module.
+
+
 API Reference
 ~~~~~~~~~~~~~
 

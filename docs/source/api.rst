@@ -35,3 +35,12 @@ Exoplanet Transit
       :members:
       :undoc-members:
       :show-inheritance:
+
+
+Radial Velocity
+---------------
+
+.. automodule:: radial_velocity
+      :members:
+      :undoc-members:
+      :show-inheritance:

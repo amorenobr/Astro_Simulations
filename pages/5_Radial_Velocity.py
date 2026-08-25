@@ -51,7 +51,7 @@ if st.button(t("run_simulation")):
             x=time,
             y=velocity,
             mode="lines",
-            name=t("rv_star_Velocity"),
+            name=t("rv_star_velocity"),
             hovertemplate=t("rv_hover"),
         )
     )

@@ -21,6 +21,8 @@ the blue as it heats up (Wien's law) and the total power grows as T⁴ (Stefan-B
 (v = H₀d), and the Hubble constant sets the age of the Universe.
 - **Exoplanet Transit** - Watch a planet cross its star and dim it: the depth of the dip gives the planet's size
 relative to the star, $(R_p/R_\\star)^2$, and the duration follows from the orbit.
+- **Radial Velocity** - A star wobbling under a planet's pull. The Doppler semi-amplitude gives the planet's minimum
+mass Mp sin i, and eccentric orbits skew the curve away from a sinusoid.
 
 ## Getting Started
 

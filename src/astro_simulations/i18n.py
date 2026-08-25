@@ -28,6 +28,8 @@ TRANSLATIONS = {
             distance (v = H₀d), and the Hubble constant sets the age of the Universe.
             - **Exoplanet Transit** - Watch a planet cross its star and dim it: the depth of the dip gives the
             planet's size relative to the star, $(R_p/R_\\star)^2$, and the duration follows from the orbit.
+            - **Radial Velocity** - Watch a star wobble as a planet tugs it. The size of the Doppler shift gives the
+            planet mass, but only $M_p \\sin i$, a lower bound, unless the orbit's tilt is known.
 
             ### How to Use
             1. Select a simulation from the **Sidebar** on the left
@@ -214,6 +216,9 @@ TRANSLATIONS = {
             - **Tránsito de Exoplaneta** - Observa un planeta cruzar su estrella y atenuarla: la profundidad de la
             caída da el tamaño del planeta relativo a la estrella, $(R_p/R_\\star)^2$, y la duración se deduce de
             la órbita.
+            - **Velocidad Radial** - Observa a una estrella oscilar por el tirón de un planeta. El tamaño del
+            corrimiento Doppler da la masa del planeta, pero solo $M_p \\sin i$, un límite inferior, salvo que se
+            conozca la inclinación de la órbita.
 
             ### Cómo usar la app
             1. Selecciona una simulación en la **barra lateral** de la izquierda
