@@ -83,7 +83,7 @@ def solve_kepler_equation(
     Args:
         mean_anomaly: Mean anomaly M in radians, which advances uniformly with time
         eccentricity: Orbital eccentricity, 0 <= e < 1
-        tolerance: Stop once every |M - (E - e sin E)| falls below this
+        tolerance: Stop once the largest residual M - (E - e sin E) falls below this in absolute value
         max_iterations: Stop after this many steps
 
     Returns:
