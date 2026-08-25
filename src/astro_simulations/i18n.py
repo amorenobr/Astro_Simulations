@@ -11,6 +11,7 @@ TRANSLATIONS = {
         "nav_planck": "Planck Spectrum",
         "nav_hubble": "Hubble's Law",
         "nav_transit": "Exoplanet Transit",
+        "nav_rv": "Radial Velocity",
         "landing_body": """
             This is an interactive collection of simulations designed to explore key concepts
             in astronomy. Each simulation allows you to adjust different physical parameters
@@ -150,6 +151,41 @@ TRANSLATIONS = {
         "tr_radius_ratio": "Radius Ratio (Rp/R★)",
         "tr_duration_total": "Total Duration (T14)",
         "tr_duration_full": "Full Duration (T23)",
+        # --- Radial Velocity ---
+        "rv_title": "Radial Velocity Simulation",
+        "rv_intro": """
+        A planet does not orbit its star, both orbit their common center of mass. The star traces a small ellipse of
+        its own, and the part of that motion along our line of sight shows up as a **Doppler shift** in its spectrum,
+        blueshifted as it approaches, redshifted as it recedes.
+
+        - **Semi-amplitude $K$:** how fast the star wobbles. Jupiter pulls the Sun at 12.5 m/s, Earth at only 0.09 m/s,
+        which is why small planets are hard to find this way.
+        - **Minimum mass:** the method measures $M_p \\sin i$, not $M_p$. An orbit seen face on ($i = 0$) gives no
+        signal at all, so every radial velocity mass is a lower bound unless the inclination is known.
+        - **Eccentricity:** a circular orbit gives a clean sinusoid. Make it eccentric and the curve skews. How it
+        skews depends on the argument of periastron, the orientation of the ellipse towrds us.
+
+        This is the companion to **Exoplanet Transit**. A transit gives a planet's radius, a radial velocity gives its
+        mass, and only a planet with both has a known density. Set the system in the sidebar and click **Run
+        Simulation**.
+        """,
+        "rv_stellar_mass": "Stellar Mass (M⊙)",
+        "rv_planet_mass": "Planet Mass (M⊕)",
+        "rv_semi_major": "Orbital Distance (AU)",
+        "rv_inclination": "Inclination (⁶)",
+        "rv_eccentricity": "Eccentricity",
+        "rv_periastron": "Argument of Periastron (⁶)",
+        "rv_current_params": "Current parameters: M★ **{ms} M⊙**, Mp **{mp} M⊕**, a **{a} AU** → period **{p} days**",
+        "rv_star_velocity": "Stellar Radial Velocity",
+        "rv_hover": "Time: %{x:.2f} d<br>Velocity: %{y:.2f}<extra></extra>",
+        "rv_curve_title": "Radial Velocity Curve over One Orbit",
+        "rv_time_axis": "Time (days)",
+        "rv_velocity_axis": "Radial Velocity (m/s)",
+        "rv_period": "Orbital Period",
+        "rv_semi_amplitude": "Semi-Amplitude (K)",
+        "rv_minimum_mass": "Minimum Mass (Mp sin i)",
+        "rv_true_mass": "true mass {m} M⊕",
+        "rv_mass_function": "Mass Function",
         "developed_by": "Developed by **Alexander Moreno Briceño** - Universidad Antonio Nariño",
     },
     "es": {
@@ -160,6 +196,7 @@ TRANSLATIONS = {
         "nav_planck": "Espectro de Planck",
         "nav_hubble": "Ley de Hubble",
         "nav_transit": "Tránsito de Exoplaneta",
+        "nav_rv": "Velocidad Radial",
         "landing_body": """
             Esta es una colección interactiva de simulaciones diseñada para explorar
             conceptos clave de astronomía. Cada simulación te permite ajustar diferentes parámetros
@@ -304,6 +341,42 @@ TRANSLATIONS = {
         "tr_radius_ratio": "Razón de Radios (Rp/R★)",
         "tr_duration_total": "Duración Total (T14)",
         "tr_duration_full": "Duración Completa (T23)",
+        # --- Radial Velocity ---
+        "rv_title": "Simulación de Velocidad Radial",
+        "rv_intro": """
+        Un planeta no orbita su estrella, ambos orbitan su centro de masa común. La estrella traza su propia elipse, y
+        la parte de ese movimiento a lo largo de nuestra línea de visión aparece como un **corrimiento Doppler** en
+        su espectro, hacia el azul cuando se acerca, hacia el rojo cuando se aleja.
+
+        - **Semiamplitud $K$:** qué tan rápido oscila la estrella. Júpiter mueve al Sol a 12.5 m/s, la Tierra a apenas
+        0.09 m/s, por eso los planetas pequeños son difícles de detectar así.
+        - **Masa mínima:** el método mide $M_p \\sin i$, no $M_p$. Una órbita vista de frente ($i = 0$) no produce
+        señal alguna, así que toda masa definida a través de la velocidad radial es un límite inferior mientras no
+        se conozca la inclinación.
+        - **Excentricidad:** una órbita circular da una curva sinusoidal. Al hacerla excéntrica la curva se deforma,
+        y cómo se deforma depende del argumento del periastro, que es la orientación de la elipse hacia nosotros.
+
+        Esta simulación es complementaria a la de **Tránsito de Exoplaneta**. Un tránsito permite obtener el radio del
+        planeta, la velocidad radial su masa, y solo un planeta con ambos valores tiene una densidad conocida.
+        Configura el sistema de la barra lateral y haz click en **Ejecutar Simulación**,
+        """,
+        "rv_stellar_mass": "Masa Estelar (M⊙)",
+        "rv_planet_mass": "Masa del Planeta (M⊕)",
+        "rv_semi_major": "Distancia Orbital (AU)",
+        "rv_inclination": "Inclinación (⁶)",
+        "rv_eccentricity": "Excentricidad",
+        "rv_periastron": "Argumento del Periastro (⁶)",
+        "rv_current_params": "Parámetros actuales: M★ **{ms} M⊙**, Mp **{mp} M⊕**, a **{a} UA** → período **{p} días**",
+        "rv_star_velocity": "Velocidad Radial Estelar",
+        "rv_hover": "Tiempo: %{x:.2f} d<br>Velocidad: %{y:.2f}<extra></extra>",
+        "rv_curve_title": "Curva de Velocidad Radial en una Órbita",
+        "rv_time_axis": "Tiempo (días)",
+        "rv_velocity_axis": "Velocidad Radial (m/s)",
+        "rv_period": "Período Orbital",
+        "rv_semi_amplitude": "Semiamplitud (K)",
+        "rv_minimum_mass": "Masa Mínima (Mp sin i)",
+        "rv_true_mass": "masa real {m} M⊕",
+        "rv_mass_function": "Función de Masa",
         "developed_by": "Desarrollado por **Alexander Moreno Briceño** - Universidad Antonio Nariño",
     },
 }
@@ -344,3 +417,4 @@ def language_selector() -> None:
     st.sidebar.page_link("pages/2_Planck_Spectrum.py", label=t("nav_planck"), icon="🌈")
     st.sidebar.page_link("pages/3_Hubble.py", label=t("nav_hubble"), icon="🌌")
     st.sidebar.page_link("pages/4_Transit.py", label=t("nav_transit"), icon="🌑")
+    st.sidebar.page_link("pages/5_Radial_Velocity.py", label=t("nav_rv"), icon="〰️")
